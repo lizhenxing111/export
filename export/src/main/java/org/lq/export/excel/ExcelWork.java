@@ -6,12 +6,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public abstract class ExcelWork {
 
-	abstract Workbook getWorkBook(String version);
+	protected final String VERSION="2007";
 	
-	Workbook get07After(){
+	protected Workbook get07After(){
 		return new XSSFWorkbook();
 	}
-	Workbook get07Before(){
+	protected Workbook get07Before(){
 		return new HSSFWorkbook();
 	}
 	
