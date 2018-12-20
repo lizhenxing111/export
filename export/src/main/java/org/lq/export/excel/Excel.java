@@ -1,14 +1,23 @@
 package org.lq.export.excel;
 
-public class Excel extends ExcelWork{
+
+/**  
+* @Title Excel表
+* @Description 
+* @author LZX
+* @date 2018年12月20日
+*/  
+public class Excel{
 	
+	/**
+	 * 版本 [2003-2007][2007-now]
+	 */
 	private String version;
 	
-	public Excel() {
-		this.version=super.VERSION;
-	}
-	public Excel(String version) {
-		this.version=version;
-	}
+	/**
+	 * 表名称
+	 */
+	private String ExcelName;
+	
 	
 }
